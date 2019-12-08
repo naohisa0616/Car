@@ -41,7 +41,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //車を作る
+        let car1 = Car()
+        let car2 = Car()
+        //クラスプロパティcountにアクセスする
+        print("動いている車は \(Car.count)台")
+        car1.start()
+        car2.start()
+        print("動いている車は \(Car.count)台")
+        car2.stop()
+        print("動いている車は \(Car.count)台")
     }
 
 
